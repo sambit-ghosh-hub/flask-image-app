@@ -9,6 +9,9 @@ from flask_migrate import Migrate
 import boto3
 import os
 
+from dotenv import load_dotenv
+load_dotenv()
+
 ACCESS_KEY=os.environ['IMAGEUSER_AK']
 ACCESS_SECRET=os.environ['IMAGEUSER_AS']
 DATABASE_PASS=os.environ['DATABASE_PASS']
